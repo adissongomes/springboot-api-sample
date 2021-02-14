@@ -1,5 +1,13 @@
 package com.adissongomes.hexagonal.dto;
 
 public class TicketCreation {
-    private String name;
+    private final String name;
+
+    public TicketCreation(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
 }
